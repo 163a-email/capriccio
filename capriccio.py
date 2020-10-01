@@ -186,6 +186,16 @@ class SoundGen(object):
       self.__set_instrument__(49, 0.4)
     elif instrument == 9: # Pipe: Piccolo
       self.__set_instrument__(72, 0.4)
+    elif instrument == 10: # Bass: Acoustic Bass
+      self.__set_instrument__(32, 0.4)
+    elif instrument == 11: # Guitar: Acoustic Guitar
+      self.__set_instrument__(24, 0.4)
+    elif instrument == 12: # Strings: Cello
+      self.__set_instrument__(42, 0.4)
+    elif instrument == 13: # Organ: Church Organ
+      self.__set_instrument__(19, 0.4)
+    elif instrument == 14: # Organ: Harmonica
+      self.__set_instrument__(22, 0.4)
     else: # Default: Piano: Electric Grand Piano
       self.__set_instrument__(2, 0.3)
     
