@@ -72,10 +72,11 @@ class Alarm(object):
     now = datetime.datetime.now()
     delay = (timestamp - now).total_seconds()
     
+    sec = "second" if abs(delay) < 1.0 else "seconds"
     if delay > 0:
-      print "Scheduling an alarm clock at %s, which is in %.1f seconds." % (timestamp, delay)
+      print "Scheduling an alarm clock at %s, which is in %.1f %s." % (timestamp, delay, sec)
     else:
-      print "Scheduling an alarm clock at %s, which is %.1f seconds earlier than current time %s. This alarm is not set." % (timestamp, delay, now)
+      print "Scheduling an alarm clock at %s, which is %.1f %s earlier than current time %s. This alarm is not set." % (timestamp, -delay, sec, now)
       return
     
     if is_random == False:
