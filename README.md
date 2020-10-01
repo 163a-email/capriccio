@@ -51,6 +51,11 @@ Currently the following instruments are available for SoundGen:
 | 7 | Gunshot | 128 |
 | 8 | String Ensemble 2 | 50 |
 | 9 | Piccolo | 73 |
+| 10 | Acoustic Bass | 33 |
+| 11 | Acoustic Guitar | 25 |
+| 12 | Cello | 43 |
+| 13 | Church Organ | 20 |
+| 14 | Harmonica | 23 |
 
 *: Default (anything not in the list)
 
